@@ -37,15 +37,15 @@ class SchemeCandidate(Base):
         ),
         Index("idx_candidate_dept", "department"),
         Index("idx_candidate_status", "verification_status"),
-        Index("idx_candidate_title", "title"),
+        Index("idx_candidate_title", "title", mysql_length=255),
         Index("idx_candidate_window_status", "current_window_status"),
         Index("idx_candidate_category", "category"),
     )
 
     id = Column(Integer, primary_key=True)
 
-    title = Column(String(1000), nullable=False)
-    title_mr = Column(String(1000), nullable=True, default="")
+    title = Column(String(500), nullable=False)
+    title_mr = Column(String(500), nullable=True, default="")
     department = Column(String(500), nullable=False)
     category = Column(String(200), nullable=False, default="General")
     target_beneficiaries = Column(Text, nullable=True, default="")

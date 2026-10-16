@@ -129,8 +129,8 @@ def run_migration() -> None:
                         text(
                             "INSERT INTO configured_sources ("
                             "name, department, source_category, start_urls, allowed_domains, provider_hint, "
-                            "is_active, monitoring_frequency_hours, priority) "
-                            "VALUES (:name, :dept, :cat, :start_urls, :allowed_domains, :provider_hint, 1, 24, 'high')"
+                            "is_active, monitoring_frequency_hours, priority, crawl_depth, max_pages, verification_required) "
+                            "VALUES (:name, :dept, :cat, :start_urls, :allowed_domains, :provider_hint, 1, 24, 'high', 2, 50, 1)"
                         ),
                         {
                             "name": site["name"],
