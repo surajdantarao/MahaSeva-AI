@@ -1,0 +1,114 @@
+
+import csv
+import hashlib
+from pathlib import Path
+
+from sqlalchemy import select
+from sqlalchemy.exc import SQLAlchemyError
+
+from backend.database import Base, SessionLocal, engine
+from backend.models import SchemeCandidate
+
+PROJECT_ROOT = Path(__file__).resolve().parent.parent
+CSV_PATH = PROJECT_ROOT / "output" / "schemes_candidates.csv"
+
+
+def clean(value: str | None) -> str:
+    return (value or "").strip()
+
+
+def sha256(value: str) -> str:
+    return hashlib.sha256(value.encode("utf-8")).hexdigest()
+
+
+def import_candidates() -> None:
+    if not CSV_PATH.is_file():
+        raise FileNotFoundError(f"CSV not found: {CSV_PATH}")
+
+    Base.metadata.create_all(bind=engine)
+
+    inserted = 0
+    skipped = 0
+
+    with CSV_PATH.open(
+        "r", encoding="utf-8-sig", newline=""
+    ) as file:
+        reader = csv.DictReader(file)
+
+        required = {"title", "department", "source_url", "text"}
+        missing = required - set(reader.fieldnames or [])
+        if missing:
+            raise ValueError(f"CSV missing columns: {sorted(missing)}")
+
+        with SessionLocal() as session:
+            try:
+                for row in reader:
+                    title = clean(row.get("title"))
+                    department = clean(row.get("department"))
+                    source_url = clean(row.get("source_url"))
+
+                    if not title or not department or not source_url:
+                        skipped += 1
+                        continue
+
+                    source_hash = sha256(source_url)
+                    content_hash = clean(row.get("content_sha256"))
+
+                    # Recalculate a hash if the CSV hash is missing or malformed.
+                    if len(content_hash) != 64:
+                        content_hash = sha256(
+                            source_url + "\n" + clean(row.get("text"))
+                        )
+
+                    existing_id = session.scalar(
+                        select(SchemeCandidate.id).where(
+                            SchemeCandidate.source_url_sha256 == source_hash,
+                            SchemeCandidate.content_sha256 == content_hash,
+                        )
+                    )
+
+                    if existing_id is not None:
+                        skipped += 1
+                        continue
+
+                    session.add(
+                        SchemeCandidate(
+                            title=title,
+                            department=department,
+                            source_url=source_url,
+                            source_url_sha256=source_hash,
+                            source_type=clean(row.get("source_type")),
+                            retrieved_at_utc=clean(
+                                row.get("retrieved_at_utc")
+                            ),
+                            content_sha256=content_hash,
+                            text=clean(row.get("text")),
+                            pdf_urls=clean(row.get("pdf_urls")),
+                            provider_classification=(
+                                clean(row.get("provider_classification"))
+                                or "unverified"
+                            ),
+                            # Never trust a CSV to approve a scheme.
+                            verification_status="pending_review",
+                            notes=clean(row.get("notes")),
+                        )
+                    )
+                    inserted += 1
+
+                session.commit()
+
+            except Exception:
+                session.rollback()
+                raise
+
+    print("Import completed successfully.")
+    print(f"Inserted: {inserted}")
+    print(f"Skipped: {skipped}")
+    print(f"CSV preserved: {CSV_PATH}")
+
+
+if __name__ == "__main__":
+    try:
+        import_candidates()
+    except (OSError, ValueError, SQLAlchemyError) as exc:
+        raise SystemExit(f"Import failed: {exc}") from exc

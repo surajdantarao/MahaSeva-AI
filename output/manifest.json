@@ -1,0 +1,20 @@
+{
+  "generated_at_utc": "2026-10-13T06:09:45.523695+00:00",
+  "candidate_records": 174,
+  "configured_sources": [
+    "Maharashtra Rural Development Department",
+    "Maharashtra Social Justice and Special Assistance Department",
+    "Maharashtra Urban Development Department",
+    "Maharashtra Planning Department",
+    "Maharashtra Co-operation, Marketing and Textiles Department",
+    "Maharashtra Social Welfare Commissionerate"
+  ],
+  "limitations": [
+    "This is not a complete catalogue of all Maharashtra schemes.",
+    "All records require human verification.",
+    "MahaDBT contains central and joint schemes as well as state schemes.",
+    "Some portals require JavaScript or may block crawling.",
+    "Scanned PDFs may require OCR.",
+    "Provider classification is heuristic and not proof of scheme funding."
+  ]
+}

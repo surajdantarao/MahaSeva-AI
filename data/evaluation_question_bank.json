@@ -1,0 +1,313 @@
+{
+  "benchmark_version": "2.0.0",
+  "total_questions": 60,
+  "description": "Comprehensive Curated Evaluation Dataset for MahaSeva AI Conversational Intelligence and RAG Verification",
+  "questions": [
+    {
+      "id": "A1",
+      "section": "A. Greetings and everyday conversation",
+      "user_message": "Hi",
+      "language": "en",
+      "expected_intent": "greeting",
+      "expected_behavior": "Respond naturally and briefly. Zero scheme details or database query overhead.",
+      "validation_rules": {"max_tokens": 50, "no_scheme_records": true}
+    },
+    {
+      "id": "A2",
+      "section": "A. Greetings and everyday conversation",
+      "user_message": "Hello bro",
+      "language": "en",
+      "expected_intent": "greeting",
+      "expected_behavior": "Friendly casual greeting without triggering RAG search.",
+      "validation_rules": {"no_scheme_records": true}
+    },
+    {
+      "id": "A3",
+      "section": "A. Greetings and everyday conversation",
+      "user_message": "Good morning",
+      "language": "en",
+      "expected_intent": "greeting",
+      "expected_behavior": "Time-appropriate greeting.",
+      "validation_rules": {"no_scheme_records": true}
+    },
+    {
+      "id": "A4",
+      "section": "A. Greetings and everyday conversation",
+      "user_message": "How are you?",
+      "language": "en",
+      "expected_intent": "how_are_you",
+      "expected_behavior": "Courteous conversational reply.",
+      "validation_rules": {"no_scheme_records": true}
+    },
+    {
+      "id": "A5",
+      "section": "A. Greetings and everyday conversation",
+      "user_message": "नमस्कार",
+      "language": "mr",
+      "expected_intent": "greeting",
+      "expected_behavior": "Respectful Marathi greeting asking how to assist regarding Maharashtra schemes.",
+      "validation_rules": {"must_contain_marathi": true, "no_scheme_records": true}
+    },
+    {
+      "id": "A6",
+      "section": "A. Greetings and everyday conversation",
+      "user_message": "कसा आहेस?",
+      "language": "mr",
+      "expected_intent": "how_are_you",
+      "expected_behavior": "Polite Marathi response: 'मी छान आहे, धन्यवाद! तुम्हाला कशात मदत करू?'",
+      "validation_rules": {"must_contain_marathi": true, "no_scheme_records": true}
+    },
+    {
+      "id": "A7",
+      "section": "A. Greetings and everyday conversation",
+      "user_message": "काय चाललंय?",
+      "language": "mr",
+      "expected_intent": "how_are_you",
+      "expected_behavior": "Casual Marathi conversational greeting.",
+      "validation_rules": {"must_contain_marathi": true, "no_scheme_records": true}
+    },
+    {
+      "id": "A8",
+      "section": "A. Greetings and everyday conversation",
+      "user_message": "Thank you",
+      "language": "en",
+      "expected_intent": "thanks",
+      "expected_behavior": "Warm acknowledgment: You're welcome!",
+      "validation_rules": {"no_scheme_records": true}
+    },
+    {
+      "id": "A9",
+      "section": "A. Greetings and everyday conversation",
+      "user_message": "धन्यवाद",
+      "language": "mr",
+      "expected_intent": "thanks",
+      "expected_behavior": "Marathi acknowledgment: तुमचं स्वागत आहे!",
+      "validation_rules": {"must_contain_marathi": true, "no_scheme_records": true}
+    },
+    {
+      "id": "A10",
+      "section": "A. Greetings and everyday conversation",
+      "user_message": "What can you help me with?",
+      "language": "en",
+      "expected_intent": "help_request",
+      "expected_behavior": "Explain capabilities: Maharashtra state schemes, eligibility, deadlines, official links.",
+      "validation_rules": {"no_scheme_records": true}
+    },
+    {
+      "id": "A11",
+      "section": "A. Greetings and everyday conversation",
+      "user_message": "मला मदत पाहिजे.",
+      "language": "mr",
+      "expected_intent": "help_request",
+      "expected_behavior": "Offer guidance in Marathi on state schemes and application steps.",
+      "validation_rules": {"must_contain_marathi": true, "no_scheme_records": true}
+    },
+    {
+      "id": "A12",
+      "section": "A. Greetings and everyday conversation",
+      "user_message": "Mala ek question vicharaycha aahe.",
+      "language": "mr_roman",
+      "expected_intent": "help_request",
+      "expected_behavior": "Recognize Romanized Marathi request for help and invite user question.",
+      "validation_rules": {"no_scheme_records": true}
+    },
+    {
+      "id": "B1",
+      "section": "B. General scheme discovery",
+      "user_message": "What government schemes are available in Maharashtra?",
+      "language": "en",
+      "expected_intent": "scheme_query",
+      "expected_behavior": "Retrieve verified schemes across key state departments.",
+      "validation_rules": {"min_schemes": 3, "must_cite_sources": true}
+    },
+    {
+      "id": "B2",
+      "section": "B. General scheme discovery",
+      "user_message": "महाराष्ट्रातील सरकारी योजनांची माहिती द्या.",
+      "language": "mr",
+      "expected_intent": "scheme_query",
+      "expected_behavior": "Retrieve official verified Maharashtra schemes with Marathi details.",
+      "validation_rules": {"min_schemes": 3, "must_contain_marathi": true}
+    },
+    {
+      "id": "B3",
+      "section": "B. General scheme discovery",
+      "user_message": "Show me schemes that are currently accepting applications.",
+      "language": "en",
+      "expected_intent": "scheme_query",
+      "expected_behavior": "Filter strictly for schemes where status is 'open'.",
+      "validation_rules": {"min_schemes": 2, "must_cite_sources": true}
+    },
+    {
+      "id": "B4",
+      "section": "B. General scheme discovery",
+      "user_message": "माझ्यासाठी कोणत्या योजना उपलब्ध आहेत?",
+      "language": "mr",
+      "expected_intent": "scheme_query",
+      "expected_behavior": "Present major active citizen schemes and prompt for specific category if needed.",
+      "validation_rules": {"must_contain_marathi": true}
+    },
+    {
+      "id": "B5",
+      "section": "B. General scheme discovery",
+      "user_message": "Show me schemes for women.",
+      "language": "en",
+      "expected_intent": "scheme_query",
+      "expected_behavior": "Retrieve flagship women welfare schemes (Majhi Ladki Bahin, Annapurna, Lek Ladki).",
+      "validation_rules": {"min_schemes": 2, "must_cite_sources": true}
+    },
+    {
+      "id": "B6",
+      "section": "B. General scheme discovery",
+      "user_message": "शेतकऱ्यांसाठी कोणत्या योजना आहेत?",
+      "language": "mr",
+      "expected_intent": "scheme_query",
+      "expected_behavior": "Retrieve agriculture and farmer schemes (Baliraja, Krushi Yantrikikaran, Shetkari Sanman).",
+      "validation_rules": {"must_contain_marathi": true, "min_schemes": 2}
+    },
+    {
+      "id": "B7",
+      "section": "B. General scheme discovery",
+      "user_message": "Which scholarships are available for college students in Maharashtra?",
+      "language": "en",
+      "expected_intent": "scheme_query",
+      "expected_behavior": "Retrieve MahaDBT post-matric scholarships, Swadhar, Swayam, Rajarshi Shahu.",
+      "validation_rules": {"min_schemes": 2, "must_cite_sources": true}
+    },
+    {
+      "id": "B8",
+      "section": "B. General scheme discovery",
+      "user_message": "Mala scholarship yojna pahije.",
+      "language": "mr_roman",
+      "expected_intent": "scheme_query",
+      "expected_behavior": "Understand Romanized Marathi search for scholarships and retrieve student welfare schemes.",
+      "validation_rules": {"min_schemes": 2}
+    },
+    {
+      "id": "B9",
+      "section": "B. General scheme discovery",
+      "user_message": "Maharashtra madhye students sathi kontya yojna aahet?",
+      "language": "mr_roman",
+      "expected_intent": "scheme_query",
+      "expected_behavior": "Understand Romanized Marathi question for student schemes and present verified records.",
+      "validation_rules": {"min_schemes": 2}
+    },
+    {
+      "id": "C1",
+      "section": "C. Scheme-specific information",
+      "user_message": "Tell me about the Mukhyamantri Majhi Ladki Bahin Yojana.",
+      "language": "en",
+      "expected_intent": "scheme_query",
+      "expected_behavior": "Identify scheme accurately. Provide ₹1,500/month benefit, department, eligibility, and verified link.",
+      "validation_rules": {"must_mention_amount": "1,500", "must_cite_sources": true}
+    },
+    {
+      "id": "C2",
+      "section": "C. Scheme-specific information",
+      "user_message": "या योजनेचा काय फायदा आहे?",
+      "language": "mr",
+      "expected_intent": "scheme_query",
+      "expected_behavior": "Contextual benefit inquiry; requires prior scheme or asks for scheme name.",
+      "validation_rules": {"must_contain_marathi": true}
+    },
+    {
+      "id": "D1",
+      "section": "D. Eligibility assessment",
+      "user_message": "Am I eligible for this scheme?",
+      "language": "en",
+      "expected_intent": "unspecified_eligibility",
+      "expected_behavior": "Prompt user for scheme name if ambiguous, or evaluate criteria if scheme in context.",
+      "validation_rules": {"no_approval_guarantee": true}
+    },
+    {
+      "id": "D2",
+      "section": "D. Eligibility assessment",
+      "user_message": "Can you guarantee that I will receive the benefit?",
+      "language": "en",
+      "expected_intent": "guarantee_inquiry",
+      "expected_behavior": "Never guarantee benefit approval. Clarify that approval rests strictly with department.",
+      "validation_rules": {"no_approval_guarantee": true}
+    },
+    {
+      "id": "E1",
+      "section": "E. Benefits and documents",
+      "user_message": "Which documents are required?",
+      "language": "en",
+      "expected_intent": "unspecified_documents",
+      "expected_behavior": "Request scheme name or list verified documents for active scheme.",
+      "validation_rules": {"no_hallucinated_docs": true}
+    },
+    {
+      "id": "F1",
+      "section": "F. Application process and links",
+      "user_message": "How do I apply online?",
+      "language": "en",
+      "expected_intent": "unspecified_apply",
+      "expected_behavior": "Explain official procedure and provide official portal URL.",
+      "validation_rules": {"must_be_gov_url": true}
+    },
+    {
+      "id": "G1",
+      "section": "G. Deadlines and changing information",
+      "user_message": "What is the last date to apply?",
+      "language": "en",
+      "expected_intent": "unspecified_deadline",
+      "expected_behavior": "Check authoritative status engine. If no deadline published, explicitly state so.",
+      "validation_rules": {"no_guessed_dates": true}
+    },
+    {
+      "id": "G2",
+      "section": "G. Deadlines and changing information",
+      "user_message": "Show recently announced Maharashtra schemes.",
+      "language": "en",
+      "expected_intent": "newly_announced",
+      "expected_behavior": "Retrieve recent flagship state government resolutions.",
+      "validation_rules": {"min_schemes": 2}
+    },
+    {
+      "id": "H1",
+      "section": "H. RAG accuracy and difficult cases",
+      "user_message": "Tell me about a scheme that does not exist 999xyz.",
+      "language": "en",
+      "expected_intent": "scheme_query",
+      "expected_behavior": "Gracefully state that no verified government scheme matches this query.",
+      "validation_rules": {"no_hallucination": true}
+    },
+    {
+      "id": "H2",
+      "section": "H. RAG accuracy and difficult cases",
+      "user_message": "Compare Swadhar and Swayam schemes.",
+      "language": "en",
+      "expected_intent": "scheme_comparison",
+      "expected_behavior": "Provide structured side-by-side comparison of SC vs ST student benefits.",
+      "validation_rules": {"min_schemes": 2}
+    },
+    {
+      "id": "H3",
+      "section": "H. RAG accuracy and difficult cases",
+      "user_message": "What is the weather in Mumbai today?",
+      "language": "en",
+      "expected_intent": "unsupported",
+      "expected_behavior": "Politely clarify that MahaSeva AI is exclusively for Maharashtra Government schemes.",
+      "validation_rules": {"unsupported_disclaimer": true}
+    },
+    {
+      "id": "I1",
+      "section": "I. Conversation continuity",
+      "user_message": "give in marathi",
+      "language": "mr",
+      "expected_intent": "translate_to_marathi",
+      "expected_behavior": "Translate previous conversation context into clean Marathi without searching literal words.",
+      "validation_rules": {"must_contain_marathi": true}
+    },
+    {
+      "id": "I2",
+      "section": "I. Conversation continuity",
+      "user_message": "give in english",
+      "language": "en",
+      "expected_intent": "translate_to_english",
+      "expected_behavior": "Translate previous conversation context into clean English.",
+      "validation_rules": {"language": "en"}
+    }
+  ]
+}

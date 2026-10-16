@@ -1,0 +1,27 @@
+2026-10-13 11:19:28,002 INFO Crawling Maharashtra Rural Development Department
+2026-10-13 11:20:07,354 INFO Maharashtra Rural Development Department: visited 19 URLs, candidates 19
+2026-10-13 11:20:07,354 INFO Crawling Maharashtra Social Justice and Special Assistance Department
+2026-10-13 11:22:54,110 INFO Maharashtra Social Justice and Special Assistance Department: visited 93 URLs, candidates 93
+2026-10-13 11:22:54,111 INFO Crawling Maharashtra Urban Development Department
+2026-10-13 11:23:09,434 INFO Maharashtra Urban Development Department: visited 6 URLs, candidates 6
+2026-10-13 11:23:09,434 INFO Crawling Maharashtra Planning Department
+2026-10-13 11:23:17,166 INFO Maharashtra Planning Department: visited 4 URLs, candidates 4
+2026-10-13 11:23:17,166 INFO Crawling Maharashtra Co-operation, Marketing and Textiles Department
+2026-10-13 11:23:45,889 INFO Maharashtra Co-operation, Marketing and Textiles Department: visited 17 URLs, candidates 17
+2026-10-13 11:23:45,889 INFO Crawling Maharashtra Social Welfare Commissionerate
+2026-10-13 11:25:58,066 WARNING Request failed https://socialwelfare.maharashtra.gov.in/en/scheme/travel-daily-allowance-protection-expenses-food-expenses-transportation-expenses-for-victims-of-atrocities-and-their-dependents-and-witnesses/: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-10-13 11:26:04,545 INFO Maharashtra Social Welfare Commissionerate: visited 62 URLs, candidates 61
+2026-10-13 11:26:04,791 INFO Done. 185 candidate records. See C:\Users\suraj\Documents\MahaSeva AI\output
+2026-10-13 11:33:47,900 INFO Crawling Maharashtra Rural Development Department
+2026-10-13 11:34:21,791 INFO Maharashtra Rural Development Department: visited 19 URLs, candidates 19
+2026-10-13 11:34:21,793 INFO Crawling Maharashtra Social Justice and Special Assistance Department
+2026-10-13 11:36:39,060 INFO Maharashtra Social Justice and Special Assistance Department: visited 80 URLs, candidates 80
+2026-10-13 11:36:39,060 INFO Crawling Maharashtra Urban Development Department
+2026-10-13 11:36:51,827 INFO Maharashtra Urban Development Department: visited 6 URLs, candidates 6
+2026-10-13 11:36:51,827 INFO Crawling Maharashtra Planning Department
+2026-10-13 11:37:01,002 INFO Maharashtra Planning Department: visited 4 URLs, candidates 4
+2026-10-13 11:37:01,016 INFO Crawling Maharashtra Co-operation, Marketing and Textiles Department
+2026-10-13 11:37:34,285 INFO Maharashtra Co-operation, Marketing and Textiles Department: visited 17 URLs, candidates 17
+2026-10-13 11:37:34,285 INFO Crawling Maharashtra Social Welfare Commissionerate
+2026-10-13 11:39:45,427 INFO Maharashtra Social Welfare Commissionerate: visited 62 URLs, candidates 62
+2026-10-13 11:39:45,526 INFO Done. 174 candidate records. See C:\Users\suraj\Documents\MahaSeva AI\output

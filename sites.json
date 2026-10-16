@@ -1,0 +1,1055 @@
+{
+  "sites": [
+    {
+      "name": "Mukhyamantri Majhi Ladki Bahin Yojana Portal",
+      "department": "Women and Child Development Department",
+      "category": "Women & Child Welfare",
+      "url": "https://ladakibahin.maharashtra.gov.in/",
+      "start_urls": [
+        "https://ladakibahin.maharashtra.gov.in/"
+      ],
+      "allowed_domains": [
+        "ladakibahin.maharashtra.gov.in"
+      ],
+      "provider_hint": "state",
+      "verification_status": "verified",
+      "enabled_status": true,
+      "monitoring_schedule": "every_12_hours",
+      "last_checked_time": "2026-10-14T07:17:57.082861+00:00",
+      "last_error": null
+    },
+    {
+      "name": "MahaDBT Farmer & Citizen Direct Benefit Transfer Portal",
+      "department": "Agriculture & Social Welfare",
+      "category": "Direct Benefit Transfer",
+      "url": "https://mahadbt.maharashtra.gov.in/",
+      "start_urls": [
+        "https://mahadbt.maharashtra.gov.in/Farmer/SchemeData/SchemeData"
+      ],
+      "allowed_domains": [
+        "mahadbt.maharashtra.gov.in"
+      ],
+      "provider_hint": "state",
+      "verification_status": "verified",
+      "enabled_status": true,
+      "monitoring_schedule": "every_24_hours",
+      "last_checked_time": "2026-10-14T07:17:57.082861+00:00",
+      "last_error": null
+    },
+    {
+      "name": "Aaple Sarkar Citizen Services Portal",
+      "department": "General Administration Department",
+      "category": "Citizen Services & DBT",
+      "url": "https://aaplesarkar.mahaonline.gov.in/",
+      "start_urls": [
+        "https://aaplesarkar.mahaonline.gov.in/"
+      ],
+      "allowed_domains": [
+        "aaplesarkar.mahaonline.gov.in",
+        "mahaonline.gov.in"
+      ],
+      "provider_hint": "state",
+      "verification_status": "verified",
+      "enabled_status": true,
+      "monitoring_schedule": "every_24_hours",
+      "last_checked_time": "2026-10-14T07:17:57.082861+00:00",
+      "last_error": null
+    },
+    {
+      "name": "Maharashtra State Official Portal",
+      "department": "General Administration Department",
+      "category": "State Portal",
+      "url": "https://www.maharashtra.gov.in/",
+      "start_urls": [
+        "https://www.maharashtra.gov.in/"
+      ],
+      "allowed_domains": [
+        "maharashtra.gov.in",
+        "www.maharashtra.gov.in"
+      ],
+      "provider_hint": "state",
+      "verification_status": "verified",
+      "enabled_status": true,
+      "monitoring_schedule": "every_24_hours",
+      "last_checked_time": "2026-10-14T07:17:57.082861+00:00",
+      "last_error": null
+    },
+    {
+      "name": "Maharashtra Government Resolutions (GR) Portal",
+      "department": "General Administration Department",
+      "category": "Government Resolutions & Circulars",
+      "url": "https://gr.maharashtra.gov.in/",
+      "start_urls": [
+        "https://gr.maharashtra.gov.in/"
+      ],
+      "allowed_domains": [
+        "gr.maharashtra.gov.in"
+      ],
+      "provider_hint": "state",
+      "verification_status": "verified",
+      "enabled_status": true,
+      "monitoring_schedule": "every_12_hours",
+      "last_checked_time": "2026-10-14T07:17:57.082861+00:00",
+      "last_error": null
+    },
+    {
+      "name": "Mahaswayam Employment and Skill Development Portal",
+      "department": "Skill Development, Employment and Entrepreneurship",
+      "category": "Employment & Skill Training",
+      "url": "https://www.mahaswayam.gov.in/",
+      "start_urls": [
+        "https://www.mahaswayam.gov.in/"
+      ],
+      "allowed_domains": [
+        "mahaswayam.gov.in",
+        "www.mahaswayam.gov.in"
+      ],
+      "provider_hint": "state",
+      "verification_status": "verified",
+      "enabled_status": true,
+      "monitoring_schedule": "every_24_hours",
+      "last_checked_time": "2026-10-14T07:17:57.082861+00:00",
+      "last_error": null
+    },
+    {
+      "name": "Maharashtra Rural Development Department",
+      "department": "Rural Development Department",
+      "category": "Rural Welfare & Panchayati Raj",
+      "url": "https://rdd.maharashtra.gov.in/en/schemes-programmes/",
+      "start_urls": [
+        "https://rdd.maharashtra.gov.in/en/schemes-programmes/"
+      ],
+      "allowed_domains": [
+        "rdd.maharashtra.gov.in"
+      ],
+      "provider_hint": "state",
+      "verification_status": "verified",
+      "enabled_status": true,
+      "monitoring_schedule": "every_24_hours",
+      "last_checked_time": "2026-10-14T07:17:57.082861+00:00",
+      "last_error": null
+    },
+    {
+      "name": "Maharashtra Social Justice and Special Assistance Department",
+      "department": "Social Justice and Special Assistance Department",
+      "category": "Social Justice & Special Assistance",
+      "url": "https://sjsa.maharashtra.gov.in/en/schemes-programmes/",
+      "start_urls": [
+        "https://sjsa.maharashtra.gov.in/en/schemes-programmes/"
+      ],
+      "allowed_domains": [
+        "sjsa.maharashtra.gov.in"
+      ],
+      "provider_hint": "state",
+      "verification_status": "verified",
+      "enabled_status": true,
+      "monitoring_schedule": "every_24_hours",
+      "last_checked_time": "2026-10-14T07:17:57.082861+00:00",
+      "last_error": null
+    },
+    {
+      "name": "Maharashtra Agriculture Department (Krishi)",
+      "department": "Agriculture Department",
+      "category": "Agriculture & Farmer Support",
+      "url": "https://krishi.maharashtra.gov.in/",
+      "start_urls": [
+        "https://krishi.maharashtra.gov.in/"
+      ],
+      "allowed_domains": [
+        "krishi.maharashtra.gov.in"
+      ],
+      "provider_hint": "state",
+      "verification_status": "verified",
+      "enabled_status": true,
+      "monitoring_schedule": "every_24_hours",
+      "last_checked_time": "2026-10-14T07:17:57.082861+00:00",
+      "last_error": null
+    },
+    {
+      "name": "Maharashtra Women and Child Development Department",
+      "department": "Women and Child Development Department",
+      "category": "Women & Child Welfare",
+      "url": "https://womenchild.maharashtra.gov.in/",
+      "start_urls": [
+        "https://womenchild.maharashtra.gov.in/"
+      ],
+      "allowed_domains": [
+        "womenchild.maharashtra.gov.in"
+      ],
+      "provider_hint": "state",
+      "verification_status": "verified",
+      "enabled_status": true,
+      "monitoring_schedule": "every_24_hours",
+      "last_checked_time": "2026-10-14T07:17:57.082861+00:00",
+      "last_error": null
+    },
+    {
+      "name": "Maharashtra Tribal Development Department",
+      "department": "Tribal Development Department",
+      "category": "Tribal Development & Welfare",
+      "url": "https://tribal.maharashtra.gov.in/",
+      "start_urls": [
+        "https://tribal.maharashtra.gov.in/"
+      ],
+      "allowed_domains": [
+        "tribal.maharashtra.gov.in"
+      ],
+      "provider_hint": "state",
+      "verification_status": "verified",
+      "enabled_status": true,
+      "monitoring_schedule": "every_24_hours",
+      "last_checked_time": "2026-10-14T07:17:57.082861+00:00",
+      "last_error": null
+    },
+    {
+      "name": "Maharashtra Urban Development Department",
+      "department": "Urban Development Department",
+      "category": "Urban Development & Housing",
+      "url": "https://urban.maharashtra.gov.in/schemes-programmes/",
+      "start_urls": [
+        "https://urban.maharashtra.gov.in/schemes-programmes/"
+      ],
+      "allowed_domains": [
+        "urban.maharashtra.gov.in"
+      ],
+      "provider_hint": "state",
+      "verification_status": "verified",
+      "enabled_status": true,
+      "monitoring_schedule": "every_24_hours",
+      "last_checked_time": "2026-10-14T07:17:57.082861+00:00",
+      "last_error": null
+    },
+    {
+      "name": "Maharashtra Planning Department",
+      "department": "Planning Department",
+      "category": "Planning & District Development",
+      "url": "https://plan.maharashtra.gov.in/en/schemes-programs/",
+      "start_urls": [
+        "https://plan.maharashtra.gov.in/en/schemes-programs/"
+      ],
+      "allowed_domains": [
+        "plan.maharashtra.gov.in"
+      ],
+      "provider_hint": "state",
+      "verification_status": "verified",
+      "enabled_status": true,
+      "monitoring_schedule": "every_24_hours",
+      "last_checked_time": "2026-10-14T07:17:57.082861+00:00",
+      "last_error": null
+    },
+    {
+      "name": "Maharashtra Co-operation, Marketing and Textiles Department",
+      "department": "Co-operation, Marketing and Textiles Department",
+      "category": "Cooperation & Marketing",
+      "url": "https://mahasahakar.maharashtra.gov.in/en/schemes-programmes/",
+      "start_urls": [
+        "https://mahasahakar.maharashtra.gov.in/en/schemes-programmes/"
+      ],
+      "allowed_domains": [
+        "mahasahakar.maharashtra.gov.in"
+      ],
+      "provider_hint": "state",
+      "verification_status": "verified",
+      "enabled_status": true,
+      "monitoring_schedule": "every_24_hours",
+      "last_checked_time": "2026-10-14T07:17:57.082861+00:00",
+      "last_error": null
+    },
+    {
+      "name": "Maharashtra Social Welfare Commissionerate",
+      "department": "Social Welfare Commissionerate",
+      "category": "Social Welfare & Scholarships",
+      "url": "https://socialwelfare.maharashtra.gov.in/en/schemes-programmes/",
+      "start_urls": [
+        "https://socialwelfare.maharashtra.gov.in/en/schemes-programmes/"
+      ],
+      "allowed_domains": [
+        "socialwelfare.maharashtra.gov.in"
+      ],
+      "provider_hint": "state",
+      "verification_status": "verified",
+      "enabled_status": true,
+      "monitoring_schedule": "every_24_hours",
+      "last_checked_time": "2026-10-14T07:17:57.082861+00:00",
+      "last_error": null
+    },
+    {
+      "name": "Maharashtra Public Health Department (Arogya)",
+      "department": "Public Health Department",
+      "category": "Healthcare & Medical Assistance",
+      "url": "https://arogya.maharashtra.gov.in/",
+      "start_urls": [
+        "https://arogya.maharashtra.gov.in/"
+      ],
+      "allowed_domains": [
+        "arogya.maharashtra.gov.in"
+      ],
+      "provider_hint": "state",
+      "verification_status": "verified",
+      "enabled_status": true,
+      "monitoring_schedule": "every_24_hours",
+      "last_checked_time": "2026-10-14T07:17:57.082861+00:00",
+      "last_error": null
+    },
+    {
+      "name": "Maharashtra School Education and Sports Department",
+      "department": "School Education and Sports Department",
+      "category": "Education & Sports",
+      "url": "https://education.maharashtra.gov.in/",
+      "start_urls": [
+        "https://education.maharashtra.gov.in/"
+      ],
+      "allowed_domains": [
+        "education.maharashtra.gov.in"
+      ],
+      "provider_hint": "state",
+      "verification_status": "verified",
+      "enabled_status": true,
+      "monitoring_schedule": "every_24_hours",
+      "last_checked_time": "2026-10-14T07:17:57.082861+00:00",
+      "last_error": null
+    },
+    {
+      "name": "Maharashtra Higher and Technical Education Department",
+      "department": "Higher and Technical Education Department",
+      "category": "Higher Education & Technical Training",
+      "url": "https://hted.maharashtra.gov.in/",
+      "start_urls": [
+        "https://hted.maharashtra.gov.in/"
+      ],
+      "allowed_domains": [
+        "hted.maharashtra.gov.in"
+      ],
+      "provider_hint": "state",
+      "verification_status": "verified",
+      "enabled_status": true,
+      "monitoring_schedule": "every_24_hours",
+      "last_checked_time": "2026-10-14T07:17:57.082861+00:00",
+      "last_error": null
+    },
+    {
+      "name": "Maharashtra Animal Husbandry and Dairy Development Department",
+      "department": "Animal Husbandry and Dairy Development Department",
+      "category": "Animal Husbandry & Dairy",
+      "url": "https://ahd.maharashtra.gov.in/",
+      "start_urls": [
+        "https://ahd.maharashtra.gov.in/"
+      ],
+      "allowed_domains": [
+        "ahd.maharashtra.gov.in"
+      ],
+      "provider_hint": "state",
+      "verification_status": "verified",
+      "enabled_status": true,
+      "monitoring_schedule": "every_24_hours",
+      "last_checked_time": "2026-10-14T07:17:57.082861+00:00",
+      "last_error": null
+    },
+    {
+      "name": "Maharashtra Fisheries Department",
+      "department": "Fisheries Department",
+      "category": "Fisheries & Coastal Livelihood",
+      "url": "https://fisheries.maharashtra.gov.in/",
+      "start_urls": [
+        "https://fisheries.maharashtra.gov.in/"
+      ],
+      "allowed_domains": [
+        "fisheries.maharashtra.gov.in"
+      ],
+      "provider_hint": "state",
+      "verification_status": "verified",
+      "enabled_status": true,
+      "monitoring_schedule": "every_24_hours",
+      "last_checked_time": "2026-10-14T07:17:57.082861+00:00",
+      "last_error": null
+    },
+    {
+      "name": "Maharashtra Revenue and Forest Department",
+      "department": "Revenue and Forest Department",
+      "category": "Land, Revenue & Disaster Relief",
+      "url": "https://revenue.maharashtra.gov.in/",
+      "start_urls": [
+        "https://revenue.maharashtra.gov.in/"
+      ],
+      "allowed_domains": [
+        "revenue.maharashtra.gov.in"
+      ],
+      "provider_hint": "state",
+      "verification_status": "verified",
+      "enabled_status": true,
+      "monitoring_schedule": "every_24_hours",
+      "last_checked_time": "2026-10-14T07:17:57.082861+00:00",
+      "last_error": null
+    },
+    {
+      "name": "Maharashtra Food, Civil Supplies and Consumer Protection Department",
+      "department": "Food, Civil Supplies and Consumer Protection Department",
+      "category": "Food Security & Rationing",
+      "url": "https://mahafood.gov.in/",
+      "start_urls": [
+        "https://mahafood.gov.in/"
+      ],
+      "allowed_domains": [
+        "mahafood.gov.in"
+      ],
+      "provider_hint": "state",
+      "verification_status": "verified",
+      "enabled_status": true,
+      "monitoring_schedule": "every_24_hours",
+      "last_checked_time": "2026-10-14T07:17:57.082861+00:00",
+      "last_error": null
+    },
+    {
+      "name": "Maharashtra Industries, Energy and Labour Department",
+      "department": "Industries, Energy and Labour Department",
+      "category": "Industries, MSME & Labour",
+      "url": "https://industry.maharashtra.gov.in/",
+      "start_urls": [
+        "https://industry.maharashtra.gov.in/"
+      ],
+      "allowed_domains": [
+        "industry.maharashtra.gov.in"
+      ],
+      "provider_hint": "state",
+      "verification_status": "verified",
+      "enabled_status": true,
+      "monitoring_schedule": "every_24_hours",
+      "last_checked_time": "2026-10-14T07:17:57.082861+00:00",
+      "last_error": null
+    },
+    {
+      "name": "Maharashtra Water Resources Department",
+      "department": "Water Resources Department",
+      "category": "Water Resources & Irrigation",
+      "url": "https://wrd.maharashtra.gov.in/",
+      "start_urls": [
+        "https://wrd.maharashtra.gov.in/"
+      ],
+      "allowed_domains": [
+        "wrd.maharashtra.gov.in"
+      ],
+      "provider_hint": "state",
+      "verification_status": "verified",
+      "enabled_status": true,
+      "monitoring_schedule": "every_24_hours",
+      "last_checked_time": "2026-10-14T07:17:57.082861+00:00",
+      "last_error": null
+    },
+    {
+      "name": "Maharashtra Water Supply and Sanitation Department",
+      "department": "Water Supply and Sanitation Department",
+      "category": "Drinking Water & Sanitation",
+      "url": "https://water.maharashtra.gov.in/",
+      "start_urls": [
+        "https://water.maharashtra.gov.in/"
+      ],
+      "allowed_domains": [
+        "water.maharashtra.gov.in"
+      ],
+      "provider_hint": "state",
+      "verification_status": "verified",
+      "enabled_status": true,
+      "monitoring_schedule": "every_24_hours",
+      "last_checked_time": "2026-10-14T07:17:57.082861+00:00",
+      "last_error": null
+    },
+    {
+      "name": "Maharashtra Other Backward Bahujan Welfare Department",
+      "department": "VJNT, OBC & SBC Welfare Department",
+      "category": "Backward Classes & Minorities Welfare",
+      "url": "https://vjnt.maharashtra.gov.in/",
+      "start_urls": [
+        "https://vjnt.maharashtra.gov.in/"
+      ],
+      "allowed_domains": [
+        "vjnt.maharashtra.gov.in"
+      ],
+      "provider_hint": "state",
+      "verification_status": "verified",
+      "enabled_status": true,
+      "monitoring_schedule": "every_24_hours",
+      "last_checked_time": "2026-10-14T07:17:57.082861+00:00",
+      "last_error": null
+    },
+    {
+      "name": "Maharashtra Minority Development Department",
+      "department": "Minority Development Department",
+      "category": "Minority Welfare & Scholarships",
+      "url": "https://mdd.maharashtra.gov.in/",
+      "start_urls": [
+        "https://mdd.maharashtra.gov.in/"
+      ],
+      "allowed_domains": [
+        "mdd.maharashtra.gov.in"
+      ],
+      "provider_hint": "state",
+      "verification_status": "verified",
+      "enabled_status": true,
+      "monitoring_schedule": "every_24_hours",
+      "last_checked_time": "2026-10-14T07:17:57.082861+00:00",
+      "last_error": null
+    },
+    {
+      "name": "Directorate of Vocational Education and Training Maharashtra",
+      "department": "Skill Development Department",
+      "category": "Vocational Training & ITI Schemes",
+      "url": "https://dvet.gov.in/",
+      "start_urls": [
+        "https://dvet.gov.in/"
+      ],
+      "allowed_domains": [
+        "dvet.gov.in"
+      ],
+      "provider_hint": "state",
+      "verification_status": "verified",
+      "enabled_status": true,
+      "monitoring_schedule": "every_24_hours",
+      "last_checked_time": "2026-10-14T07:17:57.082861+00:00",
+      "last_error": null
+    },
+    {
+      "name": "Directorate of Technical Education Maharashtra",
+      "department": "Higher and Technical Education",
+      "category": "Technical Education & Scholarships",
+      "url": "https://dte.maharashtra.gov.in/",
+      "start_urls": [
+        "https://dte.maharashtra.gov.in/"
+      ],
+      "allowed_domains": [
+        "dte.maharashtra.gov.in"
+      ],
+      "provider_hint": "state",
+      "verification_status": "verified",
+      "enabled_status": true,
+      "monitoring_schedule": "every_24_hours",
+      "last_checked_time": "2026-10-14T07:17:57.082861+00:00",
+      "last_error": null
+    },
+    {
+      "name": "State Common Entrance Test Cell Maharashtra",
+      "department": "Higher and Technical Education",
+      "category": "Admissions & CET Entrance",
+      "url": "https://cetcell.mahacet.org/",
+      "start_urls": [
+        "https://cetcell.mahacet.org/"
+      ],
+      "allowed_domains": [
+        "cetcell.mahacet.org",
+        "mahacet.org"
+      ],
+      "provider_hint": "state",
+      "verification_status": "verified",
+      "enabled_status": true,
+      "monitoring_schedule": "every_24_hours",
+      "last_checked_time": "2026-10-14T07:17:57.082861+00:00",
+      "last_error": null
+    },
+    {
+      "name": "Babasaheb Ambedkar Research and Training Institute (BARTI)",
+      "department": "Social Justice and Special Assistance Department",
+      "category": "SC Welfare, Fellowships & Coaching",
+      "url": "https://barti.maharashtra.gov.in/",
+      "start_urls": [
+        "https://barti.maharashtra.gov.in/"
+      ],
+      "allowed_domains": [
+        "barti.maharashtra.gov.in"
+      ],
+      "provider_hint": "state",
+      "verification_status": "verified",
+      "enabled_status": true,
+      "monitoring_schedule": "every_24_hours",
+      "last_checked_time": "2026-10-14T07:17:57.082861+00:00",
+      "last_error": null
+    },
+    {
+      "name": "Mahatma Jyotiba Phule Research & Training Institute (MAHAJYOTI)",
+      "department": "VJNT, OBC & SBC Welfare Department",
+      "category": "OBC Welfare, Fellowships & Training",
+      "url": "https://mahajyoti.org.in/",
+      "start_urls": [
+        "https://mahajyoti.org.in/"
+      ],
+      "allowed_domains": [
+        "mahajyoti.org.in"
+      ],
+      "provider_hint": "state",
+      "verification_status": "verified",
+      "enabled_status": true,
+      "monitoring_schedule": "every_24_hours",
+      "last_checked_time": "2026-10-14T07:17:57.082861+00:00",
+      "last_error": null
+    },
+    {
+      "name": "Chhatrapati Shahu Maharaj Research, Training & Human Development Institute (SARTHI)",
+      "department": "Planning Department",
+      "category": "Youth Empowerment, Fellowships & Skills",
+      "url": "https://sarthi-maharashtragov.in/",
+      "start_urls": [
+        "https://sarthi-maharashtragov.in/"
+      ],
+      "allowed_domains": [
+        "sarthi-maharashtragov.in"
+      ],
+      "provider_hint": "state",
+      "verification_status": "verified",
+      "enabled_status": true,
+      "monitoring_schedule": "every_24_hours",
+      "last_checked_time": "2026-10-14T07:17:57.082861+00:00",
+      "last_error": null
+    },
+    {
+      "name": "Maharashtra State Agricultural Marketing Board (MSAMB)",
+      "department": "Co-operation and Marketing Department",
+      "category": "Agri-Business & Farmer Subsidies",
+      "url": "https://www.msamb.com/",
+      "start_urls": [
+        "https://www.msamb.com/"
+      ],
+      "allowed_domains": [
+        "msamb.com",
+        "www.msamb.com"
+      ],
+      "provider_hint": "state",
+      "verification_status": "verified",
+      "enabled_status": true,
+      "monitoring_schedule": "every_24_hours",
+      "last_checked_time": "2026-10-14T07:17:57.082861+00:00",
+      "last_error": null
+    },
+    {
+      "name": "Maharashtra State Rural Livelihoods Mission (UMED)",
+      "department": "Rural Development Department",
+      "category": "Women SHGs & Livelihood Grants",
+      "url": "https://umed.in/",
+      "start_urls": [
+        "https://umed.in/"
+      ],
+      "allowed_domains": [
+        "umed.in"
+      ],
+      "provider_hint": "state",
+      "verification_status": "verified",
+      "enabled_status": true,
+      "monitoring_schedule": "every_24_hours",
+      "last_checked_time": "2026-10-14T07:17:57.082861+00:00",
+      "last_error": null
+    },
+    {
+      "name": "Mahatma Jyotirao Phule Jan Arogya Yojana (MJPJAY)",
+      "department": "Public Health Department",
+      "category": "State Health Insurance & Cashless Treatment",
+      "url": "https://www.jeevandayee.gov.in/",
+      "start_urls": [
+        "https://www.jeevandayee.gov.in/"
+      ],
+      "allowed_domains": [
+        "jeevandayee.gov.in",
+        "www.jeevandayee.gov.in"
+      ],
+      "provider_hint": "state",
+      "verification_status": "verified",
+      "enabled_status": true,
+      "monitoring_schedule": "every_24_hours",
+      "last_checked_time": "2026-10-14T07:17:57.082861+00:00",
+      "last_error": null
+    },
+    {
+      "name": "Maharashtra State Electricity Distribution Co Ltd (Mahavitaran) Solar Schemes",
+      "department": "Energy Department",
+      "category": "Agriculture Solar Pump & Electricity Subsidies",
+      "url": "https://www.mahadiscom.in/",
+      "start_urls": [
+        "https://www.mahadiscom.in/"
+      ],
+      "allowed_domains": [
+        "mahadiscom.in",
+        "www.mahadiscom.in"
+      ],
+      "provider_hint": "state",
+      "verification_status": "verified",
+      "enabled_status": true,
+      "monitoring_schedule": "every_24_hours",
+      "last_checked_time": "2026-10-14T07:17:57.082861+00:00",
+      "last_error": null
+    },
+    {
+      "name": "Maharashtra Housing and Area Development Authority (MHADA)",
+      "department": "Housing Department",
+      "category": "Affordable Housing Lotteries & Subsidies",
+      "url": "https://housing.maharashtra.gov.in/",
+      "start_urls": [
+        "https://housing.maharashtra.gov.in/"
+      ],
+      "allowed_domains": [
+        "housing.maharashtra.gov.in"
+      ],
+      "provider_hint": "state",
+      "verification_status": "verified",
+      "enabled_status": true,
+      "monitoring_schedule": "every_24_hours",
+      "last_checked_time": "2026-10-14T07:17:57.082861+00:00",
+      "last_error": null
+    },
+    {
+      "name": "Pune District Administration Official Portal",
+      "department": "Revenue and District Administration",
+      "category": "District Schemes & Citizen Services",
+      "url": "https://pune.gov.in/",
+      "start_urls": [
+        "https://pune.gov.in/"
+      ],
+      "allowed_domains": [
+        "pune.gov.in"
+      ],
+      "provider_hint": "state",
+      "verification_status": "verified",
+      "enabled_status": true,
+      "monitoring_schedule": "every_24_hours",
+      "last_checked_time": "2026-10-14T07:17:57.082861+00:00",
+      "last_error": null
+    },
+    {
+      "name": "Mumbai City District Administration Official Portal",
+      "department": "Revenue and District Administration",
+      "category": "District Schemes & Citizen Services",
+      "url": "https://mumbaicity.gov.in/",
+      "start_urls": [
+        "https://mumbaicity.gov.in/"
+      ],
+      "allowed_domains": [
+        "mumbaicity.gov.in"
+      ],
+      "provider_hint": "state",
+      "verification_status": "verified",
+      "enabled_status": true,
+      "monitoring_schedule": "every_24_hours",
+      "last_checked_time": "2026-10-14T07:17:57.082861+00:00",
+      "last_error": null
+    },
+    {
+      "name": "Mumbai Suburban District Administration Official Portal",
+      "department": "Revenue and District Administration",
+      "category": "District Schemes & Citizen Services",
+      "url": "https://mumbaisuburban.gov.in/",
+      "start_urls": [
+        "https://mumbaisuburban.gov.in/"
+      ],
+      "allowed_domains": [
+        "mumbaisuburban.gov.in"
+      ],
+      "provider_hint": "state",
+      "verification_status": "verified",
+      "enabled_status": true,
+      "monitoring_schedule": "every_24_hours",
+      "last_checked_time": "2026-10-14T07:17:57.082861+00:00",
+      "last_error": null
+    },
+    {
+      "name": "Thane District Administration Official Portal",
+      "department": "Revenue and District Administration",
+      "category": "District Schemes & Citizen Services",
+      "url": "https://thane.nic.in/",
+      "start_urls": [
+        "https://thane.nic.in/"
+      ],
+      "allowed_domains": [
+        "thane.nic.in"
+      ],
+      "provider_hint": "state",
+      "verification_status": "verified",
+      "enabled_status": true,
+      "monitoring_schedule": "every_24_hours",
+      "last_checked_time": "2026-10-14T07:17:57.082861+00:00",
+      "last_error": null
+    },
+    {
+      "name": "Nagpur District Administration Official Portal",
+      "department": "Revenue and District Administration",
+      "category": "District Schemes & Citizen Services",
+      "url": "https://nagpur.gov.in/",
+      "start_urls": [
+        "https://nagpur.gov.in/"
+      ],
+      "allowed_domains": [
+        "nagpur.gov.in"
+      ],
+      "provider_hint": "state",
+      "verification_status": "verified",
+      "enabled_status": true,
+      "monitoring_schedule": "every_24_hours",
+      "last_checked_time": "2026-10-14T07:17:57.082861+00:00",
+      "last_error": null
+    },
+    {
+      "name": "Nashik District Administration Official Portal",
+      "department": "Revenue and District Administration",
+      "category": "District Schemes & Citizen Services",
+      "url": "https://nashik.gov.in/",
+      "start_urls": [
+        "https://nashik.gov.in/"
+      ],
+      "allowed_domains": [
+        "nashik.gov.in"
+      ],
+      "provider_hint": "state",
+      "verification_status": "verified",
+      "enabled_status": true,
+      "monitoring_schedule": "every_24_hours",
+      "last_checked_time": "2026-10-14T07:17:57.082861+00:00",
+      "last_error": null
+    },
+    {
+      "name": "Chhatrapati Sambhajinagar District Administration Official Portal",
+      "department": "Revenue and District Administration",
+      "category": "District Schemes & Citizen Services",
+      "url": "https://aurangabad.gov.in/",
+      "start_urls": [
+        "https://aurangabad.gov.in/"
+      ],
+      "allowed_domains": [
+        "aurangabad.gov.in"
+      ],
+      "provider_hint": "state",
+      "verification_status": "verified",
+      "enabled_status": true,
+      "monitoring_schedule": "every_24_hours",
+      "last_checked_time": "2026-10-14T07:17:57.082861+00:00",
+      "last_error": null
+    },
+    {
+      "name": "Kolhapur District Administration Official Portal",
+      "department": "Revenue and District Administration",
+      "category": "District Schemes & Citizen Services",
+      "url": "https://kolhapur.gov.in/",
+      "start_urls": [
+        "https://kolhapur.gov.in/"
+      ],
+      "allowed_domains": [
+        "kolhapur.gov.in"
+      ],
+      "provider_hint": "state",
+      "verification_status": "verified",
+      "enabled_status": true,
+      "monitoring_schedule": "every_24_hours",
+      "last_checked_time": "2026-10-14T07:17:57.082861+00:00",
+      "last_error": null
+    },
+    {
+      "name": "Solapur District Administration Official Portal",
+      "department": "Revenue and District Administration",
+      "category": "District Schemes & Citizen Services",
+      "url": "https://solapur.gov.in/",
+      "start_urls": [
+        "https://solapur.gov.in/"
+      ],
+      "allowed_domains": [
+        "solapur.gov.in"
+      ],
+      "provider_hint": "state",
+      "verification_status": "verified",
+      "enabled_status": true,
+      "monitoring_schedule": "every_24_hours",
+      "last_checked_time": "2026-10-14T07:17:57.082861+00:00",
+      "last_error": null
+    },
+    {
+      "name": "Amravati District Administration Official Portal",
+      "department": "Revenue and District Administration",
+      "category": "District Schemes & Citizen Services",
+      "url": "https://amravati.gov.in/",
+      "start_urls": [
+        "https://amravati.gov.in/"
+      ],
+      "allowed_domains": [
+        "amravati.gov.in"
+      ],
+      "provider_hint": "state",
+      "verification_status": "verified",
+      "enabled_status": true,
+      "monitoring_schedule": "every_24_hours",
+      "last_checked_time": "2026-10-14T07:17:57.082861+00:00",
+      "last_error": null
+    },
+    {
+      "name": "Nanded District Administration Official Portal",
+      "department": "Revenue and District Administration",
+      "category": "District Schemes & Citizen Services",
+      "url": "https://nanded.gov.in/",
+      "start_urls": [
+        "https://nanded.gov.in/"
+      ],
+      "allowed_domains": [
+        "nanded.gov.in"
+      ],
+      "provider_hint": "state",
+      "verification_status": "verified",
+      "enabled_status": true,
+      "monitoring_schedule": "every_24_hours",
+      "last_checked_time": "2026-10-14T07:17:57.082861+00:00",
+      "last_error": null
+    },
+    {
+      "name": "Satara District Administration Official Portal",
+      "department": "Revenue and District Administration",
+      "category": "District Schemes & Citizen Services",
+      "url": "https://satara.gov.in/",
+      "start_urls": [
+        "https://satara.gov.in/"
+      ],
+      "allowed_domains": [
+        "satara.gov.in"
+      ],
+      "provider_hint": "state",
+      "verification_status": "verified",
+      "enabled_status": true,
+      "monitoring_schedule": "every_24_hours",
+      "last_checked_time": "2026-10-14T07:17:57.082861+00:00",
+      "last_error": null
+    },
+    {
+      "name": "Ahmednagar (Ahilyanagar) District Administration Official Portal",
+      "department": "Revenue and District Administration",
+      "category": "District Schemes & Citizen Services",
+      "url": "https://ahmednagar.nic.in/",
+      "start_urls": [
+        "https://ahmednagar.nic.in/"
+      ],
+      "allowed_domains": [
+        "ahmednagar.nic.in"
+      ],
+      "provider_hint": "state",
+      "verification_status": "verified",
+      "enabled_status": true,
+      "monitoring_schedule": "every_24_hours",
+      "last_checked_time": "2026-10-14T07:17:57.082861+00:00",
+      "last_error": null
+    },
+    {
+      "name": "Jalgaon District Administration Official Portal",
+      "department": "Revenue and District Administration",
+      "category": "District Schemes & Citizen Services",
+      "url": "https://jalgaon.gov.in/",
+      "start_urls": [
+        "https://jalgaon.gov.in/"
+      ],
+      "allowed_domains": [
+        "jalgaon.gov.in"
+      ],
+      "provider_hint": "state",
+      "verification_status": "verified",
+      "enabled_status": true,
+      "monitoring_schedule": "every_24_hours",
+      "last_checked_time": "2026-10-14T07:17:57.082861+00:00",
+      "last_error": null
+    },
+    {
+      "name": "Akola District Administration Official Portal",
+      "department": "Revenue and District Administration",
+      "category": "District Schemes & Citizen Services",
+      "url": "https://akola.gov.in/",
+      "start_urls": [
+        "https://akola.gov.in/"
+      ],
+      "allowed_domains": [
+        "akola.gov.in"
+      ],
+      "provider_hint": "state",
+      "verification_status": "verified",
+      "enabled_status": true,
+      "monitoring_schedule": "every_24_hours",
+      "last_checked_time": "2026-10-14T07:17:57.082861+00:00",
+      "last_error": null
+    },
+    {
+      "name": "Latur District Administration Official Portal",
+      "department": "Revenue and District Administration",
+      "category": "District Schemes & Citizen Services",
+      "url": "https://latur.gov.in/",
+      "start_urls": [
+        "https://latur.gov.in/"
+      ],
+      "allowed_domains": [
+        "latur.gov.in"
+      ],
+      "provider_hint": "state",
+      "verification_status": "verified",
+      "enabled_status": true,
+      "monitoring_schedule": "every_24_hours",
+      "last_checked_time": "2026-10-14T07:17:57.082861+00:00",
+      "last_error": null
+    },
+    {
+      "name": "Dhule District Administration Official Portal",
+      "department": "Revenue and District Administration",
+      "category": "District Schemes & Citizen Services",
+      "url": "https://dhule.gov.in/",
+      "start_urls": [
+        "https://dhule.gov.in/"
+      ],
+      "allowed_domains": [
+        "dhule.gov.in"
+      ],
+      "provider_hint": "state",
+      "verification_status": "verified",
+      "enabled_status": true,
+      "monitoring_schedule": "every_24_hours",
+      "last_checked_time": "2026-10-14T07:17:57.082861+00:00",
+      "last_error": null
+    },
+    {
+      "name": "Ratnagiri District Administration Official Portal",
+      "department": "Revenue and District Administration",
+      "category": "District Schemes & Citizen Services",
+      "url": "https://ratnagiri.gov.in/",
+      "start_urls": [
+        "https://ratnagiri.gov.in/"
+      ],
+      "allowed_domains": [
+        "ratnagiri.gov.in"
+      ],
+      "provider_hint": "state",
+      "verification_status": "verified",
+      "enabled_status": true,
+      "monitoring_schedule": "every_24_hours",
+      "last_checked_time": "2026-10-14T07:17:57.082861+00:00",
+      "last_error": null
+    },
+    {
+      "name": "Sindhudurg District Administration Official Portal",
+      "department": "Revenue and District Administration",
+      "category": "District Schemes & Citizen Services",
+      "url": "https://sindhudurg.nic.in/",
+      "start_urls": [
+        "https://sindhudurg.nic.in/"
+      ],
+      "allowed_domains": [
+        "sindhudurg.nic.in"
+      ],
+      "provider_hint": "state",
+      "verification_status": "verified",
+      "enabled_status": true,
+      "monitoring_schedule": "every_24_hours",
+      "last_checked_time": "2026-10-14T07:17:57.082861+00:00",
+      "last_error": null
+    },
+    {
+      "name": "Chandrapur District Administration Official Portal",
+      "department": "Revenue and District Administration",
+      "category": "District Schemes & Citizen Services",
+      "url": "https://chandrapur.gov.in/",
+      "start_urls": [
+        "https://chandrapur.gov.in/"
+      ],
+      "allowed_domains": [
+        "chandrapur.gov.in"
+      ],
+      "provider_hint": "state",
+      "verification_status": "verified",
+      "enabled_status": true,
+      "monitoring_schedule": "every_24_hours",
+      "last_checked_time": "2026-10-14T07:17:57.082861+00:00",
+      "last_error": null
+    }
+  ]
+}

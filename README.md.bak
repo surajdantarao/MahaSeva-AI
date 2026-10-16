@@ -1,0 +1,54 @@
+# MahaSeva AI — Maharashtra Scheme Collector
+
+This starter project crawls a limited set of official Maharashtra departmental scheme pages and linked PDFs. It captures provenance, retrieval timestamps, text hashes, and a human-review status.
+
+**It cannot guarantee all schemes.** Some departmental pages include Central or joint schemes, so every record must be verified before publication.
+
+## Install (Windows, Python 3.12)
+```powershell
+py -3.12 -m venv .venv
+.\.venv\Scripts\Activate.ps1
+python -m pip install --upgrade pip
+pip install -r requirements.txt
+```
+
+## Run
+```powershell
+python collector.py
+```
+Outputs are created in `output/`: `schemes_candidates.csv`, `schemes_candidates.json`, `review_queue.csv`, `manifest.json`, and `collector.log`.
+
+## Before crawling
+- Review each site's robots.txt, terms, and reuse rules.
+- Set a meaningful user agent with contact information.
+- Do not bypass login, CAPTCHA, 403, 429, or other access controls.
+- Add only official Maharashtra government department domains to `sites.json`.
+- Respect rate limits and use official APIs/downloads if offered.
+
+## Verification process
+Open `output/review_queue.csv` in Excel and for each row:
+1. Open `source_url` and linked PDFs.
+2. Confirm it is a distinct scheme, not a category page or announcement.
+3. Confirm it is a Maharashtra State Government scheme, not Central or jointly sponsored.
+4. Confirm current status and latest GR/official order.
+5. Verify benefits, eligibility, documents, application process and application URL.
+6. Record reviewer, verification date, official evidence URL, and decision.
+7. Publish only verified state schemes.
+
+Suggested review outcomes: `verified_state_scheme`, `central_or_joint`, `duplicate`, `not_a_scheme`, `outdated`, `needs_more_data`.
+
+## Deduplication
+Exact normalized title + source URL duplicates are removed. Same titles at different URLs are flagged for review, not auto-merged.
+
+## PDF notes
+Text-based PDFs are extracted with PyMuPDF. Scanned/image PDFs may require OCR and should be flagged for manual review. Do not infer missing eligibility or benefit details.
+
+## Initial official sources
+- Rural Development: https://rdd.maharashtra.gov.in/en/schemes-programmes/
+- Social Justice & Special Assistance: https://sjsa.maharashtra.gov.in/en/schemes-programmes/
+- Urban Development: https://urban.maharashtra.gov.in/schemes-programmes/
+- Planning Department: https://plan.maharashtra.gov.in/en/schemes-programs/
+- Co-operation, Marketing and Textiles: https://mahasahakar.maharashtra.gov.in/en/schemes-programmes/
+- Social Welfare Commissionerate: https://socialwelfare.maharashtra.gov.in/en/schemes-programmes/
+
+MahaDBT can help discover schemes but includes Central and state schemes. Do not import its entire list into a state-only dataset without verifying the provider.

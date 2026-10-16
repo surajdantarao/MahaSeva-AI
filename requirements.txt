@@ -1,0 +1,10 @@
+requests>=2.32.0
+beautifulsoup4>=4.12.3
+trafilatura>=2.0.0
+pymupdf>=1.24.0
+pandas>=2.2.0
+fastapi
+uvicorn[standard]
+sqlalchemy
+pymysql
+python-dotenv
