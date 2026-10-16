@@ -1700,16 +1700,17 @@
 }
 
 .chat-bubble-content.user-bubble {
-  background: var(--primary-navy);
-  color: #ffffff;
-  border-bottom-right-radius: 2px;
+  background: linear-gradient(135deg, #1e3a8a 0%, #2563eb 100%);
+  color: #ffffff !important;
+  border-radius: 16px 16px 2px 16px;
+  box-shadow: 0 4px 14px rgba(37, 99, 235, 0.22);
 }
 
 .chat-bubble-content.ai-bubble {
   background: #ffffff;
   color: var(--text-main);
   border: 1px solid #e2e8f0;
-  border-bottom-left-radius: 2px;
+  border-radius: 16px 16px 16px 2px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
 }
 
@@ -1879,29 +1880,48 @@
    ========================================================================== */
 .chat-bubble-content {
   line-height: 1.65;
-  font-size: 0.94rem;
+  font-size: 0.95rem;
   border-radius: 16px;
-  max-width: 88%;
+  max-width: 86%;
   animation: fadeIn 0.25s ease-out;
   word-break: break-word;
 }
 
+.chat-bubble-content.user-bubble,
 .user-bubble {
-  background: linear-gradient(135deg, #07192e 0%, #0f3562 100%);
-  color: #ffffff;
-  padding: 0.85rem 1.25rem;
-  border-bottom-right-radius: 4px;
-  box-shadow: 0 4px 14px rgba(7, 25, 46, 0.18);
+  background: linear-gradient(135deg, #1e3a8a 0%, #2563eb 100%) !important;
+  color: #ffffff !important;
+  padding: 0.9rem 1.35rem;
+  border-radius: 18px 18px 4px 18px !important;
+  box-shadow: 0 4px 16px rgba(37, 99, 235, 0.28);
   font-weight: 500;
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.22);
 }
 
+.chat-bubble-content.user-bubble *,
+.user-bubble * {
+  color: #ffffff !important;
+}
+
+.chat-bubble-content.user-bubble strong,
+.user-bubble strong {
+  color: #ffffff !important;
+  font-weight: 700;
+}
+
+.chat-bubble-content.user-bubble a,
+.user-bubble a {
+  color: #bfdbfe !important;
+  text-decoration: underline;
+}
+
+.chat-bubble-content.ai-bubble,
 .ai-bubble {
   background: #ffffff;
   color: #1e293b;
   padding: 1.25rem 1.5rem;
   border: 1px solid #cbd5e1;
-  border-bottom-left-radius: 4px;
+  border-radius: 18px 18px 18px 4px;
   box-shadow: 0 4px 20px -2px rgba(15, 23, 42, 0.08);
   position: relative;
 }

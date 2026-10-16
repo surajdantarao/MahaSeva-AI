@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useRef } from 'react';
 import './App.css';
 import {
   adminLogin,
@@ -34,7 +34,7 @@ import type {
   SchemeSummary,
 } from './types';
 
-function renderFormattedContent(text: string) {
+function renderFormattedContent(text: string, isUser: boolean = false) {
   if (!text) return null;
   const lines = text.split('\n');
 
@@ -53,7 +53,7 @@ function renderFormattedContent(text: string) {
             href={linkMatch[2]}
             target="_blank"
             rel="noopener noreferrer"
-            style={{ color: '#2563eb', textDecoration: 'underline', fontWeight: 600 }}
+            style={{ color: isUser ? '#bfdbfe' : '#2563eb', textDecoration: 'underline', fontWeight: 600 }}
           >
             {linkMatch[1]}
           </a>
@@ -64,7 +64,7 @@ function renderFormattedContent(text: string) {
   }
 
   return (
-    <div style={{ display: 'flex', flexDirection: 'column', gap: '0.4rem' }}>
+    <div style={{ display: 'flex', flexDirection: 'column', gap: '0.4rem', color: isUser ? '#ffffff' : '#1e293b' }}>
       {lines.map((line, lIdx) => {
         const trimmed = line.trim();
         if (!trimmed) {
@@ -79,10 +79,10 @@ function renderFormattedContent(text: string) {
                 marginBottom: '0.3rem',
                 fontSize: '0.98rem',
                 fontWeight: 700,
-                color: '#0f172a',
-                borderLeft: '3px solid #ff7722',
+                color: isUser ? '#ffffff' : '#0f172a',
+                borderLeft: isUser ? '3px solid #60a5fa' : '3px solid #ff7722',
                 paddingLeft: '0.65rem',
-                background: '#f8fafc',
+                background: isUser ? 'rgba(255, 255, 255, 0.15)' : '#f8fafc',
                 padding: '0.4rem 0.65rem',
                 borderRadius: '0 8px 8px 0',
               }}
@@ -94,12 +94,12 @@ function renderFormattedContent(text: string) {
         if (trimmed.startsWith('- ') || trimmed.startsWith('• ')) {
           return (
             <div key={lIdx} style={{ display: 'flex', gap: '0.45rem', paddingLeft: '0.4rem', marginBottom: '0.15rem' }}>
-              <span style={{ color: '#ff7722', fontWeight: 'bold' }}>•</span>
-              <div style={{ flex: 1, color: '#334155' }}>{renderInline(trimmed.slice(2))}</div>
+              <span style={{ color: isUser ? '#fde047' : '#ff7722', fontWeight: 'bold' }}>•</span>
+              <div style={{ flex: 1, color: isUser ? '#ffffff' : '#334155' }}>{renderInline(trimmed.slice(2))}</div>
             </div>
           );
         }
-        return <div key={lIdx} style={{ color: '#1e293b' }}>{renderInline(line)}</div>;
+        return <div key={lIdx} style={{ color: isUser ? '#ffffff' : '#1e293b' }}>{renderInline(line)}</div>;
       })}
     </div>
   );
@@ -157,6 +157,16 @@ export default function App() {
     },
   ]);
   const [isAiLoading, setIsAiLoading] = useState(false);
+  const chatMessagesEndRef = useRef<HTMLDivElement>(null);
+  const contextualMessagesEndRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    chatMessagesEndRef.current?.scrollIntoView({ behavior: 'smooth' });
+  }, [aiChatHistory, isAiLoading]);
+
+  useEffect(() => {
+    contextualMessagesEndRef.current?.scrollIntoView({ behavior: 'smooth' });
+  }, [contextualMessages, isContextualLoading]);
 
   // Admin Portal state
   const [adminToken, setAdminToken] = useState<string | null>(localStorage.getItem('mahaseva_admin_token'));
@@ -1573,7 +1583,7 @@ export default function App() {
                 boxShadow: '0 8px 30px rgba(0,0,0,0.06)',
               }}
             >
-              <div style={{ flex: 1, display: 'flex', flexDirection: 'column', gap: '1.1rem', overflowY: 'auto' }}>
+              <div style={{ flex: 1, minHeight: '340px', maxHeight: '560px', display: 'flex', flexDirection: 'column', gap: '1.1rem', overflowY: 'auto', paddingRight: '0.35rem' }}>
                 {aiChatHistory.map((msg, i) => {
                   const isAssistant = msg.role === 'assistant';
                   const isMarathiText = /[\u0900-\u097F]/.test(msg.text);
@@ -1607,7 +1617,7 @@ export default function App() {
                           </div>
                         )}
 
-                        {renderFormattedContent(msg.text)}
+                        {renderFormattedContent(msg.text, msg.role === 'user')}
 
                         {/* Cited Sources Card list if attached */}
                         {msg.response && msg.response.sources && msg.response.sources.length > 0 && (
@@ -1646,6 +1656,7 @@ export default function App() {
                     <span className="spinner-sm" /> ⏳ {strings.aiThinking}
                   </div>
                 )}
+                <div ref={chatMessagesEndRef} />
               </div>
 
               {/* Chat Input */}
@@ -2262,7 +2273,7 @@ export default function App() {
               {contextualMessages.map((m, idx) => (
                 <div key={idx} className={`chat-bubble-row ${m.role === 'user' ? 'user-row' : ''}`}>
                   <div className={`chat-bubble-content ${m.role === 'user' ? 'user-bubble' : 'ai-bubble'}`}>
-                    {renderFormattedContent(m.text)}
+                    {renderFormattedContent(m.text, m.role === 'user')}
                   </div>
                 </div>
               ))}
@@ -2271,6 +2282,7 @@ export default function App() {
                   ⏳ {strings.aiThinking}
                 </div>
               )}
+              <div ref={contextualMessagesEndRef} />
             </div>
 
             <div className="chat-modal-footer">
